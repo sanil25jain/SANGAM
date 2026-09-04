@@ -1,4 +1,4 @@
-import type { ApprovalRule } from "../../types/approval-rule";
+import type { ApprovalRule } from "../../app/types/approval-rule";
 
 export const approvalRules: ApprovalRule[] = [
   {

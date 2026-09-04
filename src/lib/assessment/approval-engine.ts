@@ -1,8 +1,8 @@
-import type { Approval } from "../../types/approval";
-import type { ProjectProfile } from "../../types/project";
-import type { ApprovalAssessment } from "../../types/assessment";
+import type { Approval } from "../../app/types/approval";
+import type { ProjectProfile } from "../../app/types/project";
+import type { ApprovalAssessment } from "../../app/types/assessment";
 
-import { mockApprovals } from "../../data/mock/approvals";
+import { mockApprovals } from "../../app/data/mock/approvals";
 
 export function assessProject(
   project: ProjectProfile

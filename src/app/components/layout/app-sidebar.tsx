@@ -7,8 +7,8 @@ import {
   Landmark,
 } from "lucide-react";
 
-import { navigation } from "../../lib/navigation";
-import { cn } from "../../lib/utils";
+import { navigation } from "../../../lib/navigation";
+import { cn } from "../../../lib/utils";
 
 export function AppSidebar() {
   const pathname = usePathname();

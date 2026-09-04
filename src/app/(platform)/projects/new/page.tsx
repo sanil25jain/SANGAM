@@ -7,8 +7,8 @@ import type { ProjectFormData } from "../../../types/project-form";
 import { ProjectForm } from "../../../components/projects/project-form";
 import { ProjectStepper } from "../../../components/projects/project-stepper";
 import { AssessmentResult } from "../../../components/projects/assessment-result";
-import { assessProject } from "../../../lib/assessment/approval-engine";
-import { normalizeProjectProfile } from "../../../lib/project/normalize-profile";
+import { assessProject } from "../../../../lib/assessment/approval-engine";
+import { normalizeProjectProfile } from "../../../../lib/project/normalize-profile";
 
 export default function NewProjectPage() {
   const router = useRouter();

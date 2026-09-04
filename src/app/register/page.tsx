@@ -13,7 +13,7 @@ import {
 import {
   registerUser,
   type UserType,
-} from "../lib/auth/auth-utils";
+} from "../../lib/auth/auth-utils";
 
 export default function RegisterPage() {
   const router = useRouter();

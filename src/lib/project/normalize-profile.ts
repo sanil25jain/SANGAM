@@ -1,5 +1,5 @@
-import type { ProjectProfile } from "../../types/project";
-import type { ProjectFormData } from "../../types/project-form";
+import type { ProjectProfile } from "../../app/types/project";
+import type { ProjectFormData } from "../../app/types/project-form";
 
 export function normalizeProjectProfile(
   form: ProjectFormData
@@ -17,7 +17,13 @@ export function normalizeProjectProfile(
   }
 
   return {
+    id: crypto.randomUUID(),
+
     name: form.name.trim(),
+
+    location: `${form.district.trim()}, ${form.state.trim()}`,
+
+    industry: form.sector,
 
     sector: form.sector,
 

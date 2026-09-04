@@ -21,7 +21,7 @@ import type { WorkflowGraph } from "../../types/workflow";
 
 import { ApprovalNode } from "./approval-node";
 
-import { layoutWorkflow } from "../../lib/workflow/layout";
+import { layoutWorkflow } from "../../../lib/workflow/layout";
 
 const nodeTypes = {
   approval: ApprovalNode,

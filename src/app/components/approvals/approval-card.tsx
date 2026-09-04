@@ -13,7 +13,7 @@ import {
   getStatusClass,
   getStatusLabel,
   getPriorityLabel,
-} from "../../lib/approvals/status";
+} from "../../../lib/approvals/status";
 
 interface ApprovalCardProps {
   approval: Approval;

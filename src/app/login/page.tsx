@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import { loginUser } from "../lib/auth/auth-utils";
+import { loginUser } from "../../lib/auth/auth-utils";
 
 export default function LoginPage() {
   const router = useRouter();

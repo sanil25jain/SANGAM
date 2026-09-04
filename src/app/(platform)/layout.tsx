@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 import { AppSidebar } from "../components/layout/app-sidebar";
 import { Topbar } from "../components/layout/topbar";
-import { getCurrentUser } from "../lib/auth/auth-utils";
+import { getCurrentUser } from "../../lib/auth/auth-utils";
 
 export default function PlatformLayout({
   children,

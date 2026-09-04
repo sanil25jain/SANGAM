@@ -1,5 +1,5 @@
-import type { ApprovalAssessment } from "../../types/approval";
-import type { ProjectProfile } from "../../types/assessment";
+import type { ApprovalAssessment } from "../../app/types/approval";
+import type { ProjectProfile } from "../../app/types/assessment";
 
 import { approvalRules } from "./rules";
 

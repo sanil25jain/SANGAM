@@ -1,4 +1,4 @@
-import type { Approval } from "../../types/approval";
+import type { Approval } from "../../app/types/approval";
 
 export interface ApprovalMetrics {
   total: number;

@@ -1,11 +1,11 @@
-import type { Approval } from "../../types/approval";
+import type { Approval } from "../../app/types/approval";
 import type {
   WorkflowGraph,
   WorkflowNode,
   WorkflowNodeStatus,
   WorkflowEdge,
   WorkflowAnalysis,
-} from "../../types/workflow";
+} from "../../app/types/workflow";
 
 function getNodeStatus(
   approval: Approval,

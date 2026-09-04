@@ -10,7 +10,7 @@ import {
 
 import { mockProjects } from "../../data/mock/projects";
 import { mockApprovals } from "../../data/mock/approvals";
-import { getApprovalMetrics } from "../../lib/dashboard/dashboard-metrics";
+import { getApprovalMetrics } from "../../../lib/dashboard/dashboard-metrics";
 
 export default function DashboardPage() {
   const project = mockProjects[0];

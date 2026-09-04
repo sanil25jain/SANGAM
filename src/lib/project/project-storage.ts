@@ -1,4 +1,4 @@
-import type { ProjectProfile } from "../../types/project";
+import type { ProjectProfile } from "../../app/types/project";
 
 const PROJECTS_KEY = "sangam_projects";
 

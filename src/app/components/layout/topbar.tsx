@@ -13,7 +13,7 @@ import { useRouter } from "next/navigation";
 import {
   getCurrentUser,
   logoutUser,
-} from "../../lib/auth/auth-utils";
+} from "../../../lib/auth/auth-utils";
 
 export function Topbar() {
   const router = useRouter();

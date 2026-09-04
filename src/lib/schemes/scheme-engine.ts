@@ -1,5 +1,5 @@
-import type { ProjectProfile } from "../../types/project";
-import type { Scheme } from "../../data/schemes/scheme-types";
+import type { ProjectProfile } from "../../app/types/project";
+import type { Scheme } from "../../app/data/schemes/scheme-types";
 
 export type SchemeMatch = {
   scheme: Scheme;

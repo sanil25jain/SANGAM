@@ -1,5 +1,5 @@
-import { mockApprovals } from "../../data/mock/approvals";
-import { mockProjects } from "../../data/mock/projects";
+import { mockApprovals } from "../../app/data/mock/approvals";
+import { mockProjects } from "../../app/data/mock/projects";
 
 export function getAssistantResponse(message: string): string {
   const query = message.toLowerCase();

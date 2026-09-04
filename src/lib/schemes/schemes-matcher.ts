@@ -1,5 +1,5 @@
-import type { GovernmentScheme } from "../../types/scheme";
-import type { ProjectProfile } from "../../types/project";
+import type { GovernmentScheme } from "../../app/types/scheme";
+import type { ProjectProfile } from "../../app/types/project";
 
 export function getMatchingSchemes(
   project: ProjectProfile,

@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 
 import { mockApprovals } from "../../data/mock/approvals";
-import { getComplianceMetrics } from "../../lib/compliance/compliance-utils";
+import { getComplianceMetrics } from "../../../lib/compliance/compliance-utils";
 
 export default function CompliancePage() {
   const metrics = getComplianceMetrics(mockApprovals);

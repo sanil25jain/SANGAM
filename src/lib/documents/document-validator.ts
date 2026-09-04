@@ -1,4 +1,4 @@
-import type { ProjectDocument } from "../../types/document";
+import type { ProjectDocument } from "../../app/types/document";
 
 export interface ValidationResult {
   valid: boolean;

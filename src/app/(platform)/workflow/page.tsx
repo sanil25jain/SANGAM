@@ -1,4 +1,4 @@
-import { buildWorkflowGraph, analyzeWorkflow } from "../../lib/workflow/engine";
+import { buildWorkflowGraph, analyzeWorkflow } from "../../../lib/workflow/engine";
 
 import { mockApprovals } from "../../data/mock/approvals";
 

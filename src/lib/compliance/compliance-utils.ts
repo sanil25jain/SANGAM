@@ -1,4 +1,4 @@
-import type { Approval } from "../../types/approval";
+import type { Approval } from "../../app/types/approval";
 
 export function getComplianceMetrics(
   approvals: Approval[]

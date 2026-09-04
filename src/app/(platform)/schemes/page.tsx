@@ -8,11 +8,14 @@ import {
   Target,
 } from "lucide-react";
 
-import type { ProjectProfile, IndustrySector } from "../../types/project";
+import type {
+  ProjectProfile,
+  IndustrySector,
+} from "../../types/project";
 
 import { mockProjects } from "../../data/mock/projects";
 import { mockSchemes } from "../../data/mock/schemes";
-import { matchSchemes } from "../../lib/schemes/scheme-engine";
+import { matchSchemes } from "../../../lib/schemes/scheme-engine";
 
 export default function SchemesPage() {
   const project = mockProjects[0];
@@ -27,23 +30,49 @@ export default function SchemesPage() {
   const locationParts = project.location?.split(",") ?? [];
 
   const projectProfile: ProjectProfile = {
-  name: project.name ?? "Untitled Project",
-  sector: (project.industry as IndustrySector) ?? "other",
-  projectStage: "new_setup",
-  investmentAmount: 10000000,
-  state: locationParts[1]?.trim() || "Madhya Pradesh",
-  district: locationParts[0]?.trim() || "",
-  landStatus: "industrial_estate",
-  builtUpArea: 0,
-  employeeCount: 50,
-  requiresConstruction: true,
-  requiresElectricity: true,
-  requiresWater: true,
-  generatesWaste: true,
-  usesHazardousMaterials: false,
-  requiresBoiler: false,
-  requiresFactoryLicense: true,
-};
+    id: project.id,
+
+    name: project.name ?? "Untitled Project",
+
+    location:
+      project.location ?? "Madhya Pradesh",
+
+    industry:
+      project.industry ?? "other",
+
+    sector:
+      (project.industry as IndustrySector) ?? "other",
+
+    projectStage: "new_setup",
+
+    investmentAmount: 10000000,
+
+    state:
+      locationParts[1]?.trim() || "Madhya Pradesh",
+
+    district:
+      locationParts[0]?.trim() || "",
+
+    landStatus: "industrial_estate",
+
+    builtUpArea: 0,
+
+    employeeCount: 50,
+
+    requiresConstruction: true,
+
+    requiresElectricity: true,
+
+    requiresWater: true,
+
+    generatesWaste: true,
+
+    usesHazardousMaterials: false,
+
+    requiresBoiler: false,
+
+    requiresFactoryLicense: true,
+  };
 
   const matches = matchSchemes(
     projectProfile,
@@ -153,8 +182,12 @@ function SchemeCard({
 }: {
   match: ReturnType<typeof matchSchemes>[number];
 }) {
-  const { scheme, score, matchedCriteria, confidence } =
-    match;
+  const {
+    scheme,
+    score,
+    matchedCriteria,
+    confidence,
+  } = match;
 
   const confidenceStyles = {
     high: "bg-emerald-50 text-emerald-700",
@@ -183,7 +216,9 @@ function SchemeCard({
         </div>
 
         <span
-          className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${confidenceStyles[confidence]}`}
+          className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold ${
+            confidenceStyles[confidence]
+          }`}
         >
           {score}% match
         </span>
@@ -269,7 +304,10 @@ function SchemeCard({
         </div>
 
         <a
-          href={scheme.applicationUrl ?? scheme.officialSource}
+          href={
+            scheme.applicationUrl ??
+            scheme.officialSource
+          }
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--primary)] hover:underline"

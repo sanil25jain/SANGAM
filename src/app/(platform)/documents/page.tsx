@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 
 import { mockDocuments } from "../../data/mock/documents";
-import { validateDocument } from "../../lib/documents/document-validator";
+import { validateDocument } from "../../../lib/documents/document-validator";
 
 export default function DocumentsPage() {
   const verified = mockDocuments.filter(

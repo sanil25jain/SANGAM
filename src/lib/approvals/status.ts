@@ -1,7 +1,7 @@
 import type {
   ApprovalPriority,
   ApprovalStatus,
-} from "../../types/approval";
+} from "../../app/types/approval";
 
 export function getStatusLabel(
   status: ApprovalStatus
