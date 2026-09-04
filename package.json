@@ -9,6 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@dagrejs/dagre": "^3.1.1",
+    "@xyflow/react": "^12.11.5",
+    "groq-sdk": "^1.6.0",
+    "lucide-react": "^1.37.0",
     "next": "16.3.3",
     "react": "19.2.8",
     "react-dom": "19.2.8"
